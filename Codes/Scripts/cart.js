@@ -113,8 +113,12 @@ if (submitBtn && checkoutForm) {
             alert("Your cart is empty. Please add items to your cart before checking out.");
             return;
         } else {
+            const purchasedItems = localStorage.setItem("purchases",cart);
+            
             alert("Order submitted successfully!");
             localStorage.removeItem("cart");
+
+            window.open("invoice.html","_blank");
 
             checkoutForm.reset();
             window.open("Products.html", "_self");
