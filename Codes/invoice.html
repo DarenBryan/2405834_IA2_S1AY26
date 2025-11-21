@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Invoice</h1>
+        <p><strong>Date:</strong> <span id="invoice-date"></span></p>
+    </header>
+    <div class="container">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="invoice-items"></tbody>
+        </table>
+
+        <div>
+            <p><strong>Total:</strong> $<span id="invoice-total">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="./Scripts/invoice.js"></script>
+</body>
+<script src="../Codes/Scripts/invoice.js"></script>
+
+</html>
