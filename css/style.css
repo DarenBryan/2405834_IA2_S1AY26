@@ -1,3 +1,33 @@
+/* IA#2 - CSS: Layout for Desktop View */
+
+@media screen and (min-width: 950px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        gap: 10px;
+        display: grid;
+        gap: 20px;
+    }
+
+    main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .product-card {
+        margin: 0;
+    }
+
+    .product-grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* ------------------------------
     Global Reset & Base Styles
 ------------------------------ */
@@ -14,13 +44,17 @@ body {
 }
 
 main {
-    padding: 20px;
+    padding: 0px;
 }
 
 h2 {
     text-align: center;
-    color: #333;
+    color: #363b45;
     margin-bottom: 20px;
+}
+
+#shipping-info {
+    color: #ece9e8;
 }
 
 /* ------------------------------
@@ -29,20 +63,19 @@ h2 {
 header {
     background: linear-gradient(135deg, #18385e 0%, #465e83 100%);
     color: #ece9e8;
-    padding: 20px;
-    margin-bottom: 20px;
     position: sticky;
     top: 0;
     z-index: 100;
+    width: 100%;
 }
 
 nav {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0;
 }
 
 nav ul {
@@ -66,7 +99,7 @@ nav a:hover {
 ------------------------------ */
 .hero {
     background: linear-gradient(135deg, #6b86b0 10%, #465e83 50%);
-    background-image: url(../Assets/Background.jpg);
+    background-image: url(Assets/Background.jpg);
     color: #ece9e8;
     padding: 100px 20px;
     text-align: center;
@@ -130,7 +163,7 @@ button:hover {
 .grid {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(autofit, minmax(200px, 1fr));
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 20px;
@@ -139,7 +172,7 @@ button:hover {
 .product-grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
 }
 
 .services {
@@ -219,7 +252,7 @@ form {
     padding: 30px;
     border-radius: 8px;
     background: linear-gradient(135deg, #6b86b0 10%, #465e83 50%);
-    background-image: url(../Assets/Background.jpg);
+    background-image: url(Assets/Background.jpg);
 }
 
 form label {
