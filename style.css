@@ -71,7 +71,6 @@ header {
     padding: 59px 20px;
 }
 
-
 nav {
     max-width: none;
     margin: 0;
@@ -175,7 +174,7 @@ button:hover {
 .product-grid {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .services {
