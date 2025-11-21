@@ -14,7 +14,7 @@ document.getElementById("Loginform").addEventListener("submit", function(event) 
         }
 
         if (username === loginData.username && password === loginData.password) {
-            window.open("Products.html", "_self"); 
+            window.open("./Products.html", "_self"); 
         } else {
             alert("Invalid username or password. Please try again.");
         }
@@ -25,5 +25,5 @@ document.getElementById("Loginform").addEventListener("submit", function(event) 
 
 //Redirects to registration page
 document.getElementById("register").addEventListener("click", function() {
-    window.open("RegistrationPage.html", "_self");
+    window.open("./RegistrationPage.html", "_self");
 });

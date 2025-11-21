@@ -60,14 +60,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const backToShopBtn = document.getElementById("back-to-shop-button");
     if (backToShopBtn) {
         backToShopBtn.addEventListener("click", function () {
-            window.open("Products.html", "_self");
+            window.open("./Products.html", "_self");
         });
     }
 
     const toCheckoutBtn = document.getElementById("to-checkout");
     if (toCheckoutBtn) {
         toCheckoutBtn.addEventListener("click", function () {
-            window.open("Checkout.html", "_self");
+            window.open("./Checkout.html", "_self");
         });
     }
 });
@@ -77,7 +77,7 @@ const backToCartBtn = document.getElementById("back-to-Cart");
 if (backToCartBtn) {
     backToCartBtn.addEventListener("click", function (e) {
         e.preventDefault();
-        window.open("Cart.html", "_self");
+        window.open("./Cart.html", "_self");
     });
 }
 

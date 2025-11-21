@@ -48,5 +48,5 @@ document.querySelectorAll(".addToCart").forEach(function (button) {
 
 //Navigates to the Cart page when "Cart" button is clicked.
 document.getElementById("toCart").addEventListener("click", function() {
-    window.open("Cart.html", "_self");
+    window.open("./Cart.html", "_self");
 });
