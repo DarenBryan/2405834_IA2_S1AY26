@@ -219,7 +219,7 @@ form {
     padding: 30px;
     border-radius: 8px;
     background: linear-gradient(135deg, #6b86b0 10%, #465e83 50%);
-    background-image: url(Assets/Background.jpg);
+    background-image: url(../Assets/Background.jpg);
 }
 
 form label {
