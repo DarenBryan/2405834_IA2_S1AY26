@@ -31,7 +31,7 @@ document.getElementById("Registrationform").addEventListener("submit", function(
             };
             localStorage.setItem("userData", JSON.stringify(userData));
             alert("Registration successful!");
-            window.open("LoginPage.html", "_self");
+            window.open("loginPage.html", "_self");
         } catch (storageError) {
             alert("Failed to save user data. Please try again.");
             return;

@@ -66,7 +66,7 @@ nav a:hover {
 ------------------------------ */
 .hero {
     background: linear-gradient(135deg, #6b86b0 10%, #465e83 50%);
-    background-image: url(../Assets/Background.jpg);
+    background-image: url(./Assets/Background.jpg);
     color: #ece9e8;
     padding: 100px 20px;
     text-align: center;
